@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Modal,ModalFooter,Form } from "react-bootstrap";
+import {Link} from "react-router-dom";
 import {
   RiFacebookBoxFill,
   RiGoogleFill,
@@ -44,10 +45,10 @@ const Footer = () => {
         <div className="jac__footer-links_div">
           <h2>Company</h2>
           <a href=" ">
-            <p>Terms and Conditions</p>
+            <p><Link to="/tearm-and-condition">Terms and Conditions</Link></p>
           </a>
           <a href=" ">
-            <p>Privacy Policy</p>
+            <p><Link to="/privacy-policy">Privacy Policy</Link></p>
           </a>
         </div>
         <div className="jac__footer-links_div">
