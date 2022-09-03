@@ -1,28 +1,18 @@
-
-import Navbar from './components/navbar/Navbar';
-import Header from './containers/header/Header';
-import Slide from './containers/slide/Slide';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Whyauto from './containers/jainauto/Whyauto';
-import Possibility from './containers/yakuza/Possibility';
-import CTA from './components/dealership/CTA';
-import Brands from './containers/Brands/Brands';
-import Footer from './containers/footer/Footer';
-import './App.css';
+import Home from "./Home";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Contact from "./components/Contact/contact";
+import Aj from "./containers/yakuza-aj/aj";
+import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import "./App.css";
 function App() {
   return (
-    <div className="App">
-      <div className='gradient_bg'>
-      <Navbar/>
-      <Header/>
-      </div>
-      <Slide/>
-      <Whyauto/>
-      <Possibility/>
-      <CTA/>
-      <Brands/>
-      <Footer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/contact" exact element={<Contact />}></Route>
+        <Route path="/aj/:id"  element={<Aj />}></Route>
+      </Routes>
+    </Router>
   );
 }
 

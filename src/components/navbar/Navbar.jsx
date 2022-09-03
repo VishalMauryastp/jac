@@ -4,6 +4,7 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { Button, Modal, Form, ModalFooter } from "react-bootstrap";
 import Logo from "../../assets/logo.png";
 import "./navbar.css";
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -46,16 +47,16 @@ const Navbar = () => {
         </div>
         <div className="jac__navbar-links_container">
           <p>
-            <a href="#home">Home</a>
+          <Link to="/">Home</Link>
           </p>
           <p>
             <a href="#wjac">Why Jain Auto?</a>
           </p>
           <p>
             <a href="./CTA">Open to DealerShip</a>
-          </p>
+          </p> 
           <p>
-            <a href="#features">Contact</a>
+          <Link to="/contact">Contact</Link>
           </p>
           <p>
             <a href="#blog">Library</a>

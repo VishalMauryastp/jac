@@ -2,7 +2,7 @@ import React from 'react'
 // import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Article from '../../components/aboutbrand/Article';
 import { bl01, bl02, bl03, bl04, bl05, bl06, bl07 } from './imports';
-// import AJ from '../../components/yakuza-aj/aj';
+import AJ from '../../components/yakuza-aj/aj';
 import './brands.css';
 
 const Brands = () => {
