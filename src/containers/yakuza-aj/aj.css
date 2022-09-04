@@ -17,6 +17,9 @@
     margin:30px;
   
   }
+  .product-image img{
+    max-width:600px;
+  }
   .product-image,
   .product-overview {
     width: 50%;
@@ -35,9 +38,6 @@
 table {
     border: 1px solid black;
     width: 100%;
-  }
-  tr > td:first-child {
-    font-weight: bold;
   }
   .image-wrapper  img{
       width:fit-content;

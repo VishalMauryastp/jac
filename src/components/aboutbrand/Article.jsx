@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./article.css";
-function Article({ imgUrl, text, link }) {
+function Article({ imgUrl, text, data }) {
+  console.log("This is Article")
+  console.log(data)
   return (
     <div className="gpt3__blog-container_article">
       <div className="gpt3__blog-container_article-image">
@@ -11,9 +13,8 @@ function Article({ imgUrl, text, link }) {
         <div>
           <h3>{text}</h3>
         </div>
-        {(text = text.replaceAll(" ", "-"))}
-        {(text = text.replaceAll("---", "-"))}
-        <Link to={`/aj/${text.toLowerCase()}`}>
+        {(text = text.replaceAll(" ", "-").replaceAll("---", "-"))}
+        <Link to={`/explore/${text.toLowerCase()}`}  state={{from:data}} >
           <p>Explore your vechile</p>
         </Link>
       </div>
