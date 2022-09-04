@@ -38,9 +38,9 @@ const Footer = () => {
         </div>
         <div className="jac__footer-links_div">
           <h2>Touch Up</h2>
-          <p>jain Auto</p>
+          <p><Link to="/">Jain Auto</Link></p>
           <p>Stores</p>
-          <p>e-vehicle</p>
+          <p><Link to="#">e-Vehicle </Link></p>
         </div>
         <div className="jac__footer-links_div">
           <h2>Company</h2>
